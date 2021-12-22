@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(228, 228, 228);
+}
+
+
+
+
+/* navbar */
+nav {
+    position: absolute;
+    z-index: 2;
+    background-color: #ffa6fc;
+
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: black !important;
+}
+
+.navbar-brand span {
+    color: #ff59c7;
+    ;
+}
+
+.nav-item {
+    font-weight: 600;
+    padding-right: 15px;
+}
+
+
+
+.jumbotron {
+    position: relative;
+    z-index: -101;
+}
+
+#video-background {
+    position: fixed;
+    overflow: hidden;
+    margin-top: -45px;
+    margin-left: -450px;
+}
+
+.judul p {
+    font-weight: 800;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    padding-top: 100px;
+}
+
+.judul span {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    margin-top: -20px;
+}
+
+
+.tombol {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tombol button:hover {
+    background-color: black;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.tombol button {
+    border-radius: 15px;
+    background-color: transparent;
+    border: 2px solid #ff59c7;
+}
+
+.tombol #myBtn a {
+    color: #ff59c7;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+
+.tombol #myBtn span {
+    color: #ff59c7;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 14px;
+    padding-top: 14px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    margin-top: 100px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+
+.modal h1 {
+    color: white;
+    margin-top: -5px;
+    text-align: center;
+}
+
+
+
+.modal p {
+    color: white;
+    padding-top: 20px;
+}
+
+.modal .end {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 900;
+    color: black;
+}
+
+.navbar svg {
+    margin-top: -3px;
+}
+
+
+.wrapper {
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    margin-left: 55px;
+    margin-top: 200px;
+
+}
+
+.wrapper .icon {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 6px 14px 3px #000000;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background-color: #4267B2;
+    color: #ffffff;
+}
+
+.wrapper .line:hover,
+.wrapper .line:hover .tooltip,
+.wrapper .line:hover .tooltip::before {
+    background-color: #00B900;
+    color: #ffffff;
+}
+
+
+@media (min-width: 375px) {
+
+    .wrapper {
+        position: absolute;
+        display: flex;
+        z-index: 2;
+        margin-left: 80px;
+        margin-top: 200px;
+
+    }
+}
+
+
+@media (min-width: 425px) {
+
+    .wrapper {
+        position: absolute;
+        display: flex;
+        z-index: 2;
+        margin-left: 105px;
+        margin-top: 200px;
+
+    }
+}
+
+
+/* TABLET */
+@media (min-width: 768px) {
+
+    .judul p {
+        padding-top: 150px;
+        font-size: 60px;
+    }
+
+    .judul span {
+        font-size: 15px;
+    }
+
+    .wrapper {
+        position: absolute;
+        display: flex;
+        z-index: 2;
+        margin-left: 280px;
+        margin-top: 200px;
+        padding-bottom: 30px;
+
+    }
+}
+
+/* LAPTOP 1024 */
+@media (min-width: 1024px) {
+    .wrapper {
+        position: absolute;
+        display: flex;
+        z-index: 2;
+        margin-left: 402px;
+        margin-top: 200px;
+        padding-bottom: 30px;
+
+    }
+}
+
+
+
+
+
+@media (min-width: 1400px) {
+    #video-background {
+        position: fixed;
+        overflow: hidden;
+        margin-top: -250px;
+        margin-left: -100px;
+    }
+
+
+    .wrapper {
+        position: absolute;
+        display: flex;
+        z-index: 2;
+        margin-top: 150px;
+        margin-left: 660px !important;
+    }
+}
+
+@media (min-width: 2560px) {
+
+    body {
+        background-color: #ff59c7;
+    }
+
+    #video-background {
+        position: fixed;
+        overflow: hidden;
+        margin-top: -250px;
+        margin-left: 300px;
+    }
+
+    .judul p {
+        padding-top: 150px;
+        font-size: 100px;
+    }
+
+    .judul span {
+        font-size: 25px;
+    }
+
+    .wrapper {
+        position: absolute;
+        display: flex;
+        z-index: 2;
+        margin-left: 1166px !important;
+        margin-top: 200px;
+        padding-bottom: 30px;
+
+    }
+}
